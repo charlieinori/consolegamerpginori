@@ -1,0 +1,15 @@
+H:\Documents\consolerpginori\bin\Debug\net6.0\consolerpginori.exe
+H:\Documents\consolerpginori\bin\Debug\net6.0\consolerpginori.deps.json
+H:\Documents\consolerpginori\bin\Debug\net6.0\consolerpginori.runtimeconfig.json
+H:\Documents\consolerpginori\bin\Debug\net6.0\consolerpginori.dll
+H:\Documents\consolerpginori\bin\Debug\net6.0\consolerpginori.pdb
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.csproj.AssemblyReference.cache
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.GeneratedMSBuildEditorConfig.editorconfig
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.AssemblyInfoInputs.cache
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.AssemblyInfo.cs
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.csproj.CoreCompileInputs.cache
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.dll
+H:\Documents\consolerpginori\obj\Debug\net6.0\refint\consolerpginori.dll
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.pdb
+H:\Documents\consolerpginori\obj\Debug\net6.0\consolerpginori.genruntimeconfig.cache
+H:\Documents\consolerpginori\obj\Debug\net6.0\ref\consolerpginori.dll

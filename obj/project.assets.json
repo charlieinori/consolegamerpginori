@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\530008\\OneDrive - eastsussexcollegegroup\\games development\\consolerpginori\\consolerpginori.csproj",
+      "projectUniqueName": "H:\\Documents\\consolerpginori\\consolerpginori.csproj",
       "projectName": "consolerpginori",
-      "projectPath": "C:\\Users\\530008\\OneDrive - eastsussexcollegegroup\\games development\\consolerpginori\\consolerpginori.csproj",
+      "projectPath": "H:\\Documents\\consolerpginori\\consolerpginori.csproj",
       "packagesPath": "C:\\Users\\530008\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\530008\\OneDrive - eastsussexcollegegroup\\games development\\consolerpginori\\obj\\",
+      "outputPath": "H:\\Documents\\consolerpginori\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
