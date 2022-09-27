@@ -3,12 +3,33 @@ using System.Xml;
 
 class Program
 {
+    
     public static void Main(string[] args)
     {
         bool playactive = true;
+
+
+
+        loop(playactive);
+            playactive = true;
+        loop(playactive, 1);
+            playactive = true;
+        loop(playactive, 2);
+
+
+
+    }
+    
+
+    static void loop(bool playactive, int playthrough = 0)
+    {
+
+
+      
         while (playactive == true)
+            
         {
-            int playthrough = 0;
+            
             double speed = 0;
             double pwr = 0;
             double epower = 0;
@@ -46,7 +67,6 @@ class Program
             }
             playactive = false;
         }
-        playactive = true;
     }
     }
 
