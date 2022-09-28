@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
+using System.Security.Cryptography;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -169,15 +170,39 @@ class Program
 
     static void fight(double speed = 10, double pwr = 10, double health = 100,  double epower = 10, double espeed = 10,double ehealth = 100,double dmg = 0,double edmg = 0,bool win = false)
     {
-        
+        int roll = 0;
+
+        while (health > 0 && ehealth > 0)
+        {
+            if (speed > espeed && health > 0 && ehealth > 0)
+            {
+
+                roll = DiceRoll(0, 3);
+                health -= pwr * roll;
+                Console.WriteLine(health);
+            }
+
+            
+
+        }
     
 
 
     }
- }
+
+    private static int DiceRoll(int min, int max)
+    {
+        int result;
+        Random rnd = new Random();
+
+        result = rnd.Next(min, max);
+        return result;
+    }
+
+}
 
 
 
 
-        
+
 
