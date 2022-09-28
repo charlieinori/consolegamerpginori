@@ -40,7 +40,7 @@ class Program
             Console.WriteLine("press w to progress the story and type out your choice exactly how the story presents it to you");
             Console.ForegroundColor = ConsoleColor.White;
             double speed = 10;
-            double pwr = 10;
+            double pwr = 15;
             double health = 100;  
             double epower = 10;
             double espeed = 10;
@@ -135,7 +135,7 @@ class Program
                 }
                 else if (Weapon == "dagger")
                 {
-                    pwr = pwr + 5;
+                    pwr  =+ 5;
                     speed = speed + 5;  
                     Console.WriteLine(" A dagger! it might not pack the biggest punch but you will defiantly get the first shot!");
                 }
@@ -168,24 +168,51 @@ class Program
     }
 
 
-    static void fight(double speed = 10, double pwr = 10, double health = 100,  double epower = 10, double espeed = 10,double ehealth = 100,double dmg = 0,double edmg = 0,bool win = false)
+    static void fight(double speed = 10, double pwr = 15, double health = 100,  double epower = 10, double espeed = 10,double ehealth = 100,double dmg = 0,double edmg = 0,bool win = false)
     {
         int roll = 0;
+        int eroll = 0;
+        
 
-        while (health > 0 && ehealth > 0)
+        Console.WriteLine("your health" + health);
+        Console.WriteLine("enemy health" + ehealth);
+
+        do
         {
-            if (speed > espeed && health > 0 && ehealth > 0)
+            if (espeed > speed)
+            {
+
+                eroll = DiceRoll(0, 3);
+                health -= epower * eroll;
+                Console.WriteLine("your health" + health);
+            }
+            else if (espeed < speed)
+            {
+                roll = DiceRoll(0, 3);
+                ehealth -= pwr * roll;
+                Console.WriteLine("enemy health:" + ehealth);
+            } 
+            if ((espeed < speed) && (ehealth > 0) && (health > 0))
             {
 
                 roll = DiceRoll(0, 3);
-                health -= pwr * roll;
-                Console.WriteLine(health);
+                health -= epower * roll;
+                Console.WriteLine("your health" + health);
             }
+             else if ((espeed > speed) && (ehealth > 0) && (health > 0))
+            {
+                eroll = DiceRoll(0, 3);
+                ehealth -= pwr * eroll;
+                Console.WriteLine("enemy health:" + ehealth);
+            }
+           
 
-            
 
-        }
-    
+
+
+        } while (health >= 0 && ehealth >= 0);
+
+
 
 
     }
