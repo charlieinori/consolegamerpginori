@@ -40,7 +40,7 @@ class Program
             Console.WriteLine("press w to progress the story and type out your choice exactly how the story presents it to you");
             Console.ForegroundColor = ConsoleColor.White;
             double speed = 10;
-            double pwr = 15;
+            double pwr = 10;
             double health = 100;  
             double epower = 10;
             double espeed = 10;
@@ -104,11 +104,11 @@ class Program
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 if (playthrough == 0)
                 {
-                    Console.WriteLine(" beside you rests a rusty looking sword and a large axe, you can only take one, sword or axe? ");
+                    Console.WriteLine(" beside you rests a large axe, will you take the axe? yes or no ");
                 }
                 else if (playthrough == 1)
                 {
-                    Console.WriteLine("beside you rests a smalll dagger , a rusty looking sword and a large axe, you can only take one, sword , axe or dagger?");
+                    Console.WriteLine("beside you rests a rusty looking sword and a large axe, you can only take one, sword or axe ?");
                 }
                 else
                 {
@@ -120,7 +120,7 @@ class Program
                string Weapon = Console.ReadLine();
                Console.ForegroundColor = ConsoleColor.Red;
 
-                if (Weapon == "axe")
+                if (Weapon == "yes")
                 {
                     speed = speed - 5;
                     pwr = pwr + 15;
@@ -162,13 +162,14 @@ class Program
 
 
 
+
             }
             playactive = false;
         }
     }
 
 
-    static void fight(double speed = 10, double pwr = 15, double health = 100,  double epower = 10, double espeed = 10,double ehealth = 100,double dmg = 0,double edmg = 0,bool win = false)
+    static void fight(double speed = 10, double pwr = 10, double health = 100,  double epower = 10, double espeed = 10,double ehealth = 100,double dmg = 0,double edmg = 0,bool win = false)
     {
         int roll = 0;
         int eroll = 0;
@@ -205,14 +206,12 @@ class Program
                 ehealth -= pwr * eroll;
                 Console.WriteLine("enemy health:" + ehealth);
             }
-           
-
-
-
-
         } while (health >= 0 && ehealth >= 0);
 
-
+        if (pwr > epower)
+        {
+            win = true; 
+        }
 
 
     }
